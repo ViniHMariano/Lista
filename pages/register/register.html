@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="./register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./register.js"></script>
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="container-general">
+      <div class="login-general-container">
+        <aside class="aside">
+          <h1 class="site-name">iListei</h1>
+          <h2 class="site-slogan">O jeito fácil de se organizar.</h2>
+        </aside>
+        <section class="form-global-container">
+          <div class="form-general-container">
+          <div class="welcome-text-container">
+            <h1 class="welcome-text">Novo por aqui?</h1>
+            <h2 class="welcome-subtext">Crie sua conta já!</h2>
+          </div>
+          <section class="container min-container py-md-5 mt-4" id="login-form-container">
+            <div class="card-panel p-sm-5 position-relative" id="inputs-general-container">
+              <form id="loginForm" class="mt-5">
+                <p class="small mb-2 text-scarlet"></p>
+                <div class="form-group position-relative" id="input-general-container">
+                    <label for="email" class="sr-only">Nome</label>
+                    <input
+                      class="form-control input-lg rounded-0 form-input"
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="Nome"
+                      required=""
+                    />
+                    <i class="fa fa-user position-absolute" aria-hidden="true" id="icon"></i>
+                  </div>
+                  <div class="form-group position-relative" id="input-general-container">
+                    <label for="email" class="sr-only">Email</label>
+                    <input
+                      class="form-control input-lg rounded-0 form-input"
+                      id="email"
+                      name="email"
+                      type="text"
+                      placeholder="Email / Username"
+                      required=""
+                    />
+                    <i class="fa fa-envelope position-absolute" aria-hidden="true" id="icon"></i>
+                  </div>
+                  <label for="password" class="pull-left sr-only">Password</label>
+                  <div class="position-relative" id="input-general-container">
+                    <input
+                      class="form-control input-lg rounded-0 form-input"
+                      id="password"
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      required=""
+                    />
+                    <i class="fa fa-lock fa-lg position-absolute" id="icon"></i>
+                  </div>
+                <div class="login-button-container">
+                  <button class="login-button" onclick="register()">CADASTRAR</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+        <a class="options-text" href="../login/login.html">Já sou cadastrado.</a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

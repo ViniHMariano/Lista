@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./list.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container-general">
+        <nav class="navbar">
+            <div class="logo-container">
+                <h1 class="logo">iListei</h1>
+            </div>
+            <div class="pages-container">
+                <a class="page">Minhas Listas</a>
+                <a class="page" href="../profile/profile.html">Meu Perfil</a>
+            </div>
+            <img src="../../assets/home/addButton.png" class="plus-button" onclick="showListCreator()" />
+        </nav>
+        <div class="create-list-container" id="list-creator">
+            <div class="list-info-container">
+                <h1 class="list-info-title" id="list-info-title">Nome da lista</h1>
+                <div class="list-info-inputs-container">
+                    <input class="list-info-input" placeholder="Nome da lista" id="list-name" type="text" onchange="changeListName(this.value)" />
+                    <input class="list-info-input" placeholder="Item" id="item-name" />
+                    <input class="list-info-input" placeholder="Unidade" id="item-und" />
+                    <input class="list-info-input" placeholder="Quantidade" id="item-qtd" />
+                </div>
+                <div class="list-info-buttons-container">
+                    <button class="list-info-button" onclick="addItem()">ADICIONAR</button>
+                    <button class="list-info-button" onclick="saveList()">PRONTO!</button>
+                </div>
+            </div>
+            <div class="items-info-container">
+                <h1 class="items-info-title">Items</h1>
+                <div class="table-container">
+                <table class="items-info-table" id="items-info-table">
+                    <tr id="header-row-items-table">
+                      <th>Item</th>
+                      <th>Qtd</th>
+                      <th>Und</th>
+                    </tr>
+                  </table> 
+                </div>
+            </div>
+        </div>
+        <div class="show-list-general-container" id="list-shower-container" onclick="closeListShower()">
+        <div class="show-list-container" id="list-shower">
+            <header class="show-list-header" id="show-list-header">
+          
+            </header>
+            <div class="items-info-container show-list">
+                <div class="table-container">
+                <table class="items-info-table show-list" id="items-info-shower-table">
+                   
+                  </table> 
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="lists-general-container" id="with-lists">
+            <div class="lists-title-container">
+                <h1 class="lists-title">Minhas Listas</h1>
+            </div>
+            <div class="lists-container" id="lists-container">
+            </div>
+        </div>
+        <div class="lists-general-container" id="no-lists">
+            <div class="lists-title-container">
+                <h1 class="lists-title">Minhas Listas</h1>
+            </div>
+            <div class="no-lists-msg-container">
+              <h1 class="no-lists-msg-main">Xiiih! Nada por <br> aqui ainda...</h1>
+              <h2 class="no-lists-msg-sub">Sem pânico! É só clicar no <br> botão “+” que te ajudamos <br> a se organizar.</h2>
+            </div>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>
